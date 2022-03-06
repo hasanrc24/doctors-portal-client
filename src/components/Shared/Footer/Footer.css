@@ -1,0 +1,32 @@
+.footer-section{
+    background-image: url('../../../images/footer-bg.png');
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+.footer-title{
+    color: #5FC7C7;
+    font-weight: bold;
+    height: 25px;
+}
+.copyRight{
+    bottom: 10px!important;
+    right: 0;
+    left: 0;
+    position: absolute;
+}
+.footer-icons{
+    margin-top: -70px;
+}
+.footer-icons svg{
+    padding-right: 5px;
+    font-size: 30px;
+}
+.footer-icons svg:hover{
+    color: #5FC7C7;
+    cursor: pointer;
+}
+.ftData small{
+    color: #848B9F;
+}

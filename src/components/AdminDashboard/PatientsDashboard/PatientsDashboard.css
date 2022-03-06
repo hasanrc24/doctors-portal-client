@@ -1,0 +1,20 @@
+.all-patients{
+    background-color: white;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    width: 95%;
+    height: 80vh;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 30px;
+}
+.all-patients-table .tbody{
+    display: inline-block;
+    max-height: 370px;
+    overflow-y: scroll;
+}
+.all-patients-table .tbl .thead, .tbl .tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }

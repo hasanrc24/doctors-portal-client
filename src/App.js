@@ -1,24 +1,49 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import Home from './components/Home/Home';
+import Appointment from './components/Appointment/Appointment';
+import Login from './components/Login/Login';
+import { AuthProvider } from '../src/Contexts/AuthContext';
+import Dashboard from './components/AdminDashboard/Dashboard/Dashboard';
+import AppointmentDashboard from './components/AdminDashboard/AppointmentDashboard/AppointmentDashboard';
+import PatientsDashboard from './components/AdminDashboard/PatientsDashboard/PatientsDashboard';
+import PrescriptionsDashboard from './components/AdminDashboard/PrescriptionsDashboard/PrescriptionsDashboard';
+import AddDoctor from './components/AdminDashboard/AddDoctor/AddDoctor';
+import PrivateRoute from './components/PrivateRoute';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AuthProvider>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/appointment">
+            <Appointment />
+          </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <PrivateRoute path="/dashboard">
+            <Dashboard />
+          </PrivateRoute>
+          <PrivateRoute path="/appointments">
+            <AppointmentDashboard />
+          </PrivateRoute>
+          <PrivateRoute path="/patients">
+            <PatientsDashboard />
+          </PrivateRoute>
+          <PrivateRoute path="/prescription">
+            <PrescriptionsDashboard />
+          </PrivateRoute>
+          <PrivateRoute path="/addDoctor">
+            <AddDoctor />
+          </PrivateRoute>
+        </Switch>
+      </BrowserRouter>
+    </AuthProvider>
   );
 }
 

@@ -1,0 +1,16 @@
+.box-shadow{
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+.card-text{
+    color: #595762;
+}
+.img-height{
+    max-height: 57px;
+}
+.card-name{
+    color: #5FC7C7;
+    font-weight: bold;
+}
+.user-location{
+    color: #8F8C9B;
+}

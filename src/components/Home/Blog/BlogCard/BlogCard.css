@@ -1,0 +1,32 @@
+.blog-card{
+    position: relative;
+}
+.blog-hover{
+    position: absolute;
+    background-color: #19D3AE;
+    height: 100%;
+    width: 100%;
+    display: none;
+    transition: all 0.5s;
+}
+.blog-hover::after{
+    background-image: url('../../../../images/Mask\ Group\ 6.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    content: ' ';
+    top: 47px;
+    right: 15px;
+    height: 50%;
+    width: 50%;
+}
+.blog-card:hover .blog-hover{
+    display: block;
+}
+.blog-hover-inner{
+    padding: 40px 20px;
+}
+.arr{
+    padding-top: 30px;
+    width: 35px;
+}

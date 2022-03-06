@@ -1,0 +1,21 @@
+.blog-title h6{
+    color: #5FC7C7;
+    font-weight: bold;
+}
+.blog-title h1{
+    font-weight: normal;
+}
+.blog-card{
+    display: flex;
+    justify-content: center;
+}
+.padd{
+    padding-right: 4rem;
+    padding-left: 3rem;
+}
+.card-desc{
+    color: #B3B2B5;
+}
+.blog-card-shadow{
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}

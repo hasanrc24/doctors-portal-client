@@ -1,0 +1,31 @@
+.appointment-container{
+    height: 700px;
+    position: relative;
+}
+.appointment-container::before{
+    background-image: url('../../images/bg.png');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: ' ';
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.calender-style{
+    border: none!important;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.3);
+    line-height: 2.125em;
+}
+.booking-card-style{
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+.card-text{
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+.card-desc{
+    font-size: 10px;
+}
